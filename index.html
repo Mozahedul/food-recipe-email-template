@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food recipe - email template</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 10px;
+        display: table;
+      }
+
+      /* Header section */
+
+      .logo {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+      }
+      .logo img {
+        width: 100%;
+        height: 100%;
+        min-width: 30px;
+        max-width: 40px;
+      }
+
+      .login {
+        text-align: center;
+        display: block;
+        padding: 10px;
+        margin-top: 10px;
+      }
+
+      .login-btn {
+        background-color: rgb(233, 233, 233);
+        padding: 8px 30px;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        color: rgb(32, 32, 32);
+        border: 1px solid rgb(48, 48, 48);
+      }
+
+      /* Banner section */
+
+      .banner {
+        margin-top: 10px;
+        display: block;
+      }
+      .banner img {
+        width: 100%;
+        max-width: 600px;
+      }
+
+      .section-one {
+        display: block;
+        margin-top: 30px;
+      }
+
+      .section-one-frame-one {
+        width: 100%;
+        max-width: 50px;
+        height: auto;
+      }
+
+      .section-one h3 {
+        font-size: 28px;
+        color: rgb(48, 48, 48);
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      .section-one-right-arrow {
+        width: 100%;
+        height: auto;
+        max-width: 50px;
+      }
+
+      .section-one p {
+        font-size: 16px;
+      }
+
+      .section-one td {
+        display: block;
+      }
+
+      .section-one-img {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      .section-one-img img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+      }
+
+      .direction-section td {
+        display: block;
+      }
+
+      .direction-section .ingredient {
+        font-size: 24px;
+        color: rgb(41, 41, 41);
+        margin: 15px 0;
+      }
+
+      .direction-section p {
+        font-size: 14px;
+      }
+
+      .direction-title h2 {
+        margin-bottom: 15px;
+      }
+
+      .direction-title p {
+        font-size: 14px;
+        line-height: 1.4;
+        font-weight: 500;
+      }
+
+      .recipe-btn {
+        display: block;
+        margin-top: 30px;
+        padding-bottom: 40px;
+        border-bottom: 2px solid lightgray;
+      }
+
+      .recipe-btn td {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      }
+
+      .recipe-btn button {
+        border: none;
+        outline: none;
+        padding: 8px 18px;
+        background-color: rgb(37, 37, 37);
+        color: #fff;
+        font-size: 15px;
+        cursor: pointer;
+      }
+
+      .section-two {
+        display: block;
+        margin-top: 40px;
+        margin-bottom: 30px;
+      }
+
+      .section-two td {
+        display: block;
+      }
+
+      .section-two-text {
+        margin-top: 20px;
+      }
+
+      .section-two-img img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+      }
+
+      .section-one-right-arrow {
+        margin-bottom: 30px;
+      }
+
+      .section-two-text p {
+        font-size: 15px;
+        line-height: 1.4;
+        font-weight: 500;
+        color: #272727;
+      }
+
+      .section-two-text h3 {
+        margin: 15px 0;
+        font-size: 24px;
+      }
+
+      .direction-section td {
+        margin-top: 30px;
+      }
+
+      /* connect seection */
+
+      .connect-section {
+        display: block;
+        margin-top: 15px;
+      }
+
+      .connect-section p {
+        margin-bottom: 15px;
+      }
+
+      .connect-section td {
+        display: block;
+        text-align: center;
+      }
+
+      .connect-section table {
+        display: table;
+        width: 100%;
+      }
+
+      .connect-section table td {
+        display: inline-block;
+        width: 50%;
+      }
+
+      .connect-section td table td img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+      }
+
+      .connect-section h2 {
+        font-size: 32px;
+      }
+
+      .direction-section-left {
+        background-color: rgb(199, 34, 185);
+      }
+
+      @media screen and (min-width: 450px) {
+        .container {
+          max-width: 600px;
+          width: 100%;
+          display: table;
+        }
+
+        .theader {
+          display: block;
+          margin-top: 10px;
+        }
+
+        .logo {
+          display: inline;
+          margin-top: 0;
+        }
+
+        .logo img {
+          min-width: 20px;
+          max-width: 30px;
+        }
+
+        .login {
+          text-align: right;
+          display: inline;
+          float: right;
+          padding-right: 0;
+          margin-top: 0;
+        }
+
+        .banner img {
+          width: 100%;
+          max-width: 600px;
+        }
+
+        /* Section */
+        .section-one-right-img {
+          width: 100%;
+          max-width: 600px;
+        }h 
+
+        .section-one {
+          display: block;
+        }
+
+        .section-one-text {
+          width: 34%;
+          height: auto;
+          float: left;
+        }
+
+        .section-one-text h3 {
+          font-size: 20px;
+        }
+
+        .section-one-text p {
+          margin-top: 30px;
+        }
+
+        .section-one-img {
+          width: 65%;
+          float: right;
+          background-color: aqua;
+          margin-top: 0;
+          display: table-cell;
+          vertical-align: middle;
+        }
+
+        .section-one-img img {
+          width: 100%;
+          max-width: 600px;
+          height: auto;
+          /* object-fit: contain;          */
+        }
+
+        /* Direction section */
+        .direction-section td {
+          width: 49%;
+          display: inline-block;
+        }
+
+        .direction-section-left {
+          float: left;
+        }
+
+        .direction-title {
+          float: right;
+        }
+
+        /* section two */
+        .section-two-img {
+          width: 65%;
+          float: left;
+        }
+
+        .section-two-text {
+          width: 32%;
+          float: right;
+          margin-top: 0;
+        }
+
+        .section-two-img img {
+          width: 100%;
+          max-width: 600px;
+          height: auto;
+        }
+
+        .connect-section table td {
+          display: inline-block;
+          width: 25%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <table class="container">
+      <!-- Email Header -->
+      <thead>
+        <tr class="theader">
+          <td class="logo">
+            <img
+              src="https://i.ibb.co/q9ksSpx/logo.png"
+              alt="logo"
+              border="0"
+            />
+          </td>
+          <td class="login"><a href="#" class="login-btn">Login</a></td>
+        </tr>
+      </thead>
+
+      <!-- Email Body -->
+      <!-- BANNER SECTION -->
+      <tbody>
+        <tr>
+          <td class="banner">
+            <img
+              src="https://i.ibb.co/7GT9FZ5/image16753417371379380.png"
+              alt="image16753417371379380"
+              border="0"
+            />
+          </td>
+        </tr>
+
+        <!-- section frame 1 -->
+        <tr class="section-one">
+          <td class="section-one-text">
+            <img
+              class="section-one-frame-one"
+              src="https://i.ibb.co/WWL1wkT/frame-1.png"
+              alt="frame-1"
+              border="0"
+            />
+            <h3>Fried eggs with avocado and fresh flowers</h3>
+            <img
+              class="section-one-right-arrow"
+              src="https://i.ibb.co/VMNjd5Y/right-arrow.png"
+              alt="right-arrow"
+              border="0"
+            />
+            <p>
+              We're always looking for new ways to enjoy our favorite foods, and
+              this one is definitely a keeper
+            </p>
+          </td>
+
+          <td class="section-one-img">
+            <img
+              src="https://i.ibb.co/djHzGdG/anastasiia-babintseva-photos-of-delicious-gourmet-breakfasts-dc1c7ce65dfa444e947d72952a8bbce.png"
+              alt="anastasiia-babintseva-photos-of-delicious-gourmet-breakfasts-dc1c7ce65dfa444e947d72952a8bbce"
+              border="0"
+            />
+          </td>
+        </tr>
+        <!-- Direction section -->
+        <tr class="direction-section">
+          <td
+            class="direction-section-left"
+            style="padding: 8px; background-color: rgb(240, 239, 230)"
+          >
+            <div><strong>Prep time:</strong><span>5 minutes</span></div>
+            <div><strong>Cook time:</strong><span>10 minutes</span></div>
+            <div><strong>Serves:</strong><span>2</span></div>
+            <h2 class="ingredient">Ingredients:</h2>
+            <p>2 eggs per person</p>
+            <p>1/2 avocado per person</p>
+            <p>1 handful of fresh flowers</p>
+          </td>
+          <td class="direction-title">
+            <h2>Directions:</h2>
+            <p>
+              In a medium-sized pan, heat 2 tablespoons of oil over medium heat.
+              Crack the eggs into the pan and cook for above 3 minutes on each
+              side, or until they reach your preferred doneness. Remove from
+              pan. Add 1 tablespoon of oil to the same pan and saute the avocado
+              slices.
+            </p>
+          </td>
+        </tr>
+        <!-- Recipe button sectoin -->
+        <tr class="recipe-btn">
+          <td>
+            <button>Save recipe</button>
+          </td>
+        </tr>
+
+        <!-- Section frame 2 -->
+        <tr class="section-two">
+          <td class="section-two-img">
+            <img
+              src="https://i.ibb.co/xSXJkqK/anastasiia-babintseva-photos-of-delicious-gourmet-breakfasts-a7de7006103443feb6ba011b39d948f.png"
+              alt="anastasiia-babintseva-photos-of-delicious-gourmet-breakfasts-a7de7006103443feb6ba011b39d948f"
+              border="0"
+            />
+          </td>
+          <td class="section-two-text">
+            <img
+              class="section-one-frame-one"
+              src="https://i.ibb.co/R6Pz3mS/frame-2.png"
+              alt="frame-2"
+              border="0"
+            />
+            <h3>Belgian waffles with berries and cream</h3>
+            <img
+              class="section-one-right-arrow"
+              src="https://i.ibb.co/47VYyM6/left-arrow.png"
+              alt="right-arrow"
+              border="0"
+            />
+            <p>
+              We're always looking for new ways to enjoy our favorite foods, and
+              this one is definitely a keeper
+            </p>
+          </td>
+        </tr>
+
+        <!-- Direction section -->
+        <tr class="direction-section">
+          <td
+            class="direction-section-left"
+            style="padding: 8px; background-color: rgb(240, 239, 230)"
+          >
+            <div><strong>Prep time:</strong><span>5 minutes</span></div>
+            <div><strong>Cook time:</strong><span>10 minutes</span></div>
+            <div><strong>Serves:</strong><span>2</span></div>
+            <h2 class="ingredient">Ingredients:</h2>
+            <p>2 eggs per person</p>
+            <p>1/2 avocado per person</p>
+            <p>1 handful of fresh flowers</p>
+          </td>
+          <td class="direction-title">
+            <h2>Directions:</h2>
+            <p>
+              In a medium-sized pan, heat 2 tablespoons of oil over medium heat.
+              Crack the eggs into the pan and cook for above 3 minutes on each
+              side, or until they reach your preferred doneness. Remove from
+              pan. Add 1 tablespoon of oil to the same pan and saute the avocado
+              slices.
+            </p>
+          </td>
+        </tr>
+
+        <!-- Recipe button sectoin -->
+        <tr class="recipe-btn">
+          <td>
+            <button>Save recipe</button>
+          </td>
+        </tr>
+
+        <!-- section frame 3 -->
+        <tr class="section-one">
+          <td class="section-one-text">
+            <img
+              class="section-one-frame-one"
+              src="https://i.ibb.co/0BZLzv8/frame-3.png"
+              alt="frame-3"
+              border="0"
+            />
+            <h3>Fried eggs with avocado and fresh flowers</h3>
+            <img
+              class="section-one-right-arrow"
+              src="https://i.ibb.co/VMNjd5Y/right-arrow.png"
+              alt="right-arrow"
+              border="0"
+            />
+            <p>
+              We're always looking for new ways to enjoy our favorite foods, and
+              this one is definitely a keeper
+            </p>
+          </td>
+
+          <td class="section-one-img">
+            <img
+              src="https://i.ibb.co/2k44n6T/anastasiia-babintseva-photos-of-delicious-gourmet-breakfasts-a107245ee4e24304a2453d9fb8ffb05.png"
+              alt="anastasiia-babintseva-photos-of-delicious-gourmet-breakfasts-dc1c7ce65dfa444e947d72952a8bbce"
+              border="0"
+            />
+          </td>
+        </tr>
+        <!-- Direction section -->
+        <tr class="direction-section">
+          <td
+            class="direction-section-left"
+            style="padding: 8px; background-color: rgb(240, 239, 230)"
+          >
+            <div><strong>Prep time:</strong><span>5 minutes</span></div>
+            <div><strong>Cook time:</strong><span>10 minutes</span></div>
+            <div><strong>Serves:</strong><span>2</span></div>
+            <h2 class="ingredient">Ingredients:</h2>
+            <p>2 eggs per person</p>
+            <p>1/2 avocado per person</p>
+            <p>1 handful of fresh flowers</p>
+          </td>
+          <td class="direction-title">
+            <h2>Directions:</h2>
+            <p>
+              In a medium-sized pan, heat 2 tablespoons of oil over medium heat.
+              Crack the eggs into the pan and cook for above 3 minutes on each
+              side, or until they reach your preferred doneness. Remove from
+              pan. Add 1 tablespoon of oil to the same pan and saute the avocado
+              slices.
+            </p>
+          </td>
+        </tr>
+        <!-- Recipe button sectoin -->
+        <tr class="recipe-btn">
+          <td>
+            <button>Save recipe</button>
+          </td>
+        </tr>
+
+        <!-- Connect section -->
+        <tr class="connect-section">
+          <td>
+            <h2>Connect with us</h2>
+            <p>@foodblog</p>
+          </td>
+          <td>
+            <table>
+              <tr>
+                <td>
+                  <img
+                    src="https://i.ibb.co/djHzGdG/anastasiia-babintseva-photos-of-delicious-gourmet-breakfasts-dc1c7ce65dfa444e947d72952a8bbce.png"
+                    alt="anastasiia-babintseva-photos-of-delicious-gourmet-breakfasts-dc1c7ce65dfa444e947d72952a8bbce"
+                    border="0"
+                  />
+                </td>
+                <td>
+                  <img
+                    src="https://i.ibb.co/2k44n6T/anastasiia-babintseva-photos-of-delicious-gourmet-breakfasts-a107245ee4e24304a2453d9fb8ffb05.png"
+                    alt="anastasiia-babintseva-photos-of-delicious-gourmet-breakfasts-a107245ee4e24304a2453d9fb8ffb05"
+                    border="0"
+                  />
+                </td>
+                <td>
+                  <img
+                    src="https://i.ibb.co/xSXJkqK/anastasiia-babintseva-photos-of-delicious-gourmet-breakfasts-a7de7006103443feb6ba011b39d948f.png"
+                    alt="anastasiia-babintseva-photos-of-delicious-gourmet-breakfasts-a7de7006103443feb6ba011b39d948f"
+                    border="0"
+                  />
+                </td>
+
+                <td>
+                  <img
+                    src="https://i.ibb.co/djHzGdG/anastasiia-babintseva-photos-of-delicious-gourmet-breakfasts-dc1c7ce65dfa444e947d72952a8bbce.png"
+                    alt="anastasiia-babintseva-photos-of-delicious-gourmet-breakfasts-dc1c7ce65dfa444e947d72952a8bbce"
+                    border="0"
+                  />
+                </td>
+                <td>
+                  <img
+                    src="https://i.ibb.co/2k44n6T/anastasiia-babintseva-photos-of-delicious-gourmet-breakfasts-a107245ee4e24304a2453d9fb8ffb05.png"
+                    alt="anastasiia-babintseva-photos-of-delicious-gourmet-breakfasts-a107245ee4e24304a2453d9fb8ffb05"
+                    border="0"
+                  />
+                </td>
+                <td>
+                  <img
+                    src="https://i.ibb.co/xSXJkqK/anastasiia-babintseva-photos-of-delicious-gourmet-breakfasts-a7de7006103443feb6ba011b39d948f.png"
+                    alt="anastasiia-babintseva-photos-of-delicious-gourmet-breakfasts-a7de7006103443feb6ba011b39d948f"
+                    border="0"
+                  />
+                </td>
+                <td>
+                  <img
+                    src="https://i.ibb.co/djHzGdG/anastasiia-babintseva-photos-of-delicious-gourmet-breakfasts-dc1c7ce65dfa444e947d72952a8bbce.png"
+                    alt="anastasiia-babintseva-photos-of-delicious-gourmet-breakfasts-dc1c7ce65dfa444e947d72952a8bbce"
+                    border="0"
+                  />
+                </td>
+                <td>
+                  <img
+                    src="https://i.ibb.co/2k44n6T/anastasiia-babintseva-photos-of-delicious-gourmet-breakfasts-a107245ee4e24304a2453d9fb8ffb05.png"
+                    alt="anastasiia-babintseva-photos-of-delicious-gourmet-breakfasts-a107245ee4e24304a2453d9fb8ffb05"
+                    border="0"
+                  />
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+
+      <!-- Email Footer -->
+    </table>
+  </body>
+</html>
